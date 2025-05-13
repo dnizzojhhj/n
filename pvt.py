@@ -18,7 +18,6 @@ from telebot.types import ReplyKeyboardMarkup, KeyboardButton, ReplyKeyboardRemo
 import warnings
 from cryptography.utils import CryptographyDeprecationWarning
 import signal
-from keep_alive import keep_alive
 import sys
 import os
 import paramiko
@@ -34,7 +33,6 @@ warnings.filterwarnings("ignore", category=CryptographyDeprecationWarning)
 
 # --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-keep_alive()
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
